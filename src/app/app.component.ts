@@ -3,6 +3,7 @@ import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database
 import {AngularFireAuth} from 'angularfire2/auth';
 import {Observable} from 'rxjs/Observable';
 import {User} from 'firebase/app';
+import * as firebase from 'firebase/app';
 
 @Component({
     selector: 'app-root',
@@ -26,7 +27,7 @@ export class AppComponent {
     }
 
     login() {
-        this.afAuth.auth.signInAnonymously();
+        this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
     }
 
     logout() {

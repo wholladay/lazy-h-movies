@@ -1,3 +1,8 @@
+<md-toolbar color="primary">
+    <span>Holladay Movies</span>
+    <span class="fill-remaining-space"></span>
+    <span>Right Aligned Text</span>
+</md-toolbar>
 <div class="row columns">
     <button (click)="login()" *ngIf="!(user | async)?.uid">Anonymous Login</button>
     <button (click)="logout()" *ngIf="(user | async)?.uid">Logout</button>
@@ -6,6 +11,5 @@
         <ul>
             <li *ngFor="let video of videos | async">{{video.title}}</li>
         </ul>
-        <!--<p *ngFor="let video of videos | async">{{video.title}}</p>-->
     </div>
 </div>
