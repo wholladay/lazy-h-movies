@@ -1,0 +1,18 @@
+.video-heading {
+    font-size: 14pt;
+    margin-top: 8px;
+}
+
+.video-number {
+    display: inline-block;
+    min-width: 40px;
+    text-align: right;
+}
+.video-title {
+    margin-left: 4px;
+}
+
+.video-details {
+    font-size: 10pt;
+    margin-left: 48px;
+}

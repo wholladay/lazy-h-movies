@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdButtonModule, MdCardModule, MdIconModule, MdMenuModule, MdToolbarModule} from '@angular/material';
 
 import {AppComponent} from './app.component';
+import { VideoItemComponent } from './video-item/video-item.component';
 
 export const firebaseConfig = {
     apiKey: 'AIzaSyCQEVOeFUTFGGqaTrLVNlfx47JPEdD3SR4',
@@ -21,7 +22,8 @@ export const firebaseConfig = {
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        VideoItemComponent
     ],
     imports: [
         BrowserModule,
