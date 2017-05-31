@@ -12,11 +12,8 @@
 <div class="row columns">
 
     <div id="details-container">
-        <!--<ul>-->
-            <!--<li *ngFor="let video of videos | async">{{video.title}}</li>-->
         <md-list>
             <app-video-item *ngFor="let vid of videos | async" [video]="vid"></app-video-item>
         </md-list>
-        <!--</ul>-->
     </div>
 </div>
