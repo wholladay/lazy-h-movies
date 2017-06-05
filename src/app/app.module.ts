@@ -6,10 +6,11 @@ import {AngularFireModule} from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCardModule, MdIconModule, MdMenuModule, MdToolbarModule} from '@angular/material';
+import {MdButtonModule, MdCardModule, MdIconModule, MdMenuModule, MdToolbarModule, MdTooltipModule} from '@angular/material';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 import {AppComponent} from './app.component';
-import { VideoItemComponent } from './video-item/video-item.component';
+import {VideoItemComponent} from './video-item/video-item.component';
 
 export const firebaseConfig = {
     apiKey: 'AIzaSyCQEVOeFUTFGGqaTrLVNlfx47JPEdD3SR4',
@@ -33,10 +34,12 @@ export const firebaseConfig = {
         AngularFireDatabaseModule,
         AngularFireAuthModule,
         BrowserAnimationsModule,
+        FlexLayoutModule,
         MdButtonModule,
         MdMenuModule,
         MdCardModule,
         MdToolbarModule,
+        MdTooltipModule,
         MdIconModule
     ],
     providers: [],

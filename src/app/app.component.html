@@ -11,9 +11,16 @@
 </md-toolbar>
 <div class="row columns">
 
-    <div id="details-container">
-        <md-list>
-            <app-video-item *ngFor="let vid of videos | async" [video]="vid"></app-video-item>
-        </md-list>
+    <div fxLayout="row">
+        <input type="text">
     </div>
+    <!--<div fxLayout="column">-->
+        <!--<div fxFlex="25" fxFlex.sm="5" fxFlex></div>-->
+        <!--<md-list>-->
+    <div fxLayout="column" fxLayoutAlign="space-around center">
+        <app-video-item *ngFor="let vid of videos | async" [video]="vid"></app-video-item>
+    </div>
+        <!--</md-list>-->
+        <!--<div fxFlex="25" fxFlex.sm="5"></div>-->
+    <!--</div>-->
 </div>

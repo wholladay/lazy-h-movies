@@ -5,11 +5,22 @@
 
 .video-number {
     display: inline-block;
-    min-width: 40px;
+    width: 40px;
     text-align: right;
+    vertical-align: top;
 }
 .video-title {
+    display: inline-block;
     margin-left: 4px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.video-rating {
+    display: inline-block;
+    width: 64px;
+    vertical-align: top;
 }
 
 .video-details {
