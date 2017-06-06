@@ -6,7 +6,7 @@ import {AngularFireModule} from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCardModule, MdIconModule, MdMenuModule, MdToolbarModule, MdTooltipModule} from '@angular/material';
+import {MdButtonModule, MdCardModule, MdIconModule, MdInputModule, MdMenuModule, MdToolbarModule, MdTooltipModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
 import {AppComponent} from './app.component';
@@ -40,7 +40,8 @@ export const firebaseConfig = {
         MdCardModule,
         MdToolbarModule,
         MdTooltipModule,
-        MdIconModule
+        MdIconModule,
+        MdInputModule
     ],
     providers: [],
     bootstrap: [AppComponent]
