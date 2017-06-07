@@ -2,7 +2,7 @@
     <span>Holladay Movies</span>
     <span class="fill-remaining-space"></span>
     <div>
-        <div *ngIf="currentUser" id="user-pic" [ngStyle]="profilePicStyles"></div>
+        <!--<div *ngIf="currentUser" id="user-pic" [ngStyle]="profilePicStyles"></div>-->
         <button md-button *ngIf="(user | async)?.uid" (click)="logout()">Sign-out</button>
         <button md-button *ngIf="!(user | async)?.uid" (click)="login()"><i class="material-icons">account_circle</i>Sign-in
             with Google
