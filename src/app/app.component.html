@@ -1,20 +1,20 @@
-<md-toolbar color="primary">
+<mat-toolbar color="primary">
     <span>Holladay Movies</span>
     <span class="fill-remaining-space"></span>
     <div>
         <!--<div *ngIf="currentUser" id="user-pic" [ngStyle]="profilePicStyles"></div>-->
-        <button md-button *ngIf="(user | async)?.uid" (click)="logout()">Sign-out</button>
-        <button md-button *ngIf="!(user | async)?.uid" (click)="login()"><i class="material-icons">account_circle</i>Sign-in
+        <button mat-button *ngIf="(user | async)?.uid" (click)="logout()">Sign-out</button>
+        <button mat-button *ngIf="!(user | async)?.uid" (click)="login()"><i class="material-icons">account_circle</i>Sign-in
             with Google
         </button>
     </div>
-</md-toolbar>
+</mat-toolbar>
 <div class="row columns">
 
     <div fxLayout="row">
-        <md-input-container>
-            <input mdInput placeholder="Movie title" type="text" (input)="titleChanged($event)">
-        </md-input-container>
+        <mat-form-field>
+            <input matInput placeholder="Movie title" type="text" (input)="titleChanged($event)">
+        </mat-form-field>
     </div>
     <div fxLayout="column" fxLayoutAlign="space-around center">
         <app-video-item *ngFor="let vid of filteredVideos" [video]="vid"></app-video-item>
